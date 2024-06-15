@@ -51,7 +51,15 @@ ALTER TABLE {project_id}{dataset_id}{table_id}
 ADD COLUMN name STRING"""  # add column and datatype
 res = pullDataFromBQ(q)
 
-dat.to_gbq(f"{project_id}.{dataset_id}.{table_id}", project_id='project_id',
+df.to_gbq(f"{project_id}.{dataset_id}.{table_id}", project_id='project_id',
 if_exists='append'
 
 )
+# To Delete with specific requirement from table.
+DELETE
+FROM {{project_id}{dataset_id}{table_id}
+WHERE column name between 'start_date' and 'end_date' # modify the where clause to meet certain requirements.
+
+#To Delete table
+DROP TABLE {project_id}.{dataset_id}.{table_id};
+
