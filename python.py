@@ -24,7 +24,7 @@ table_name = 'table_name'
  # load credentials 
 credentials = service_account.Credentials.from_service_account_file(
     '[link/to/json/file]') 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '[link/to/json/file]' # like ./buypower-mobile-app-4567g0whk234.json for example (not a real keyfile name)
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '[link/to/json/file]' 
 
 def pullDataFromBQ(query):
     project_id = 'project_name'
