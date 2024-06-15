@@ -62,4 +62,8 @@ WHERE column name between 'start_date' and 'end_date' # modify the where clause 
 
 #To Delete table
 DROP TABLE {project_id}.{dataset_id}.{table_id};
+# To update table
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
 
