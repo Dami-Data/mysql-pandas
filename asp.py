@@ -50,3 +50,8 @@ q = f"""
 ALTER TABLE {project_id}{dataset_id}{table_id}
 ADD COLUMN name STRING"""  # add column and datatype
 res = pullDataFromBQ(q)
+
+dat.to_gbq(f"{project_id}.{dataset_id}.{table_id}", project_id='project_id',
+if_exists='append'
+
+)
