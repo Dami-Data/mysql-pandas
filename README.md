@@ -17,5 +17,5 @@ To use the scripts:
 * Open the python file corresponding to the project you are interested in.
 * Copy the codes from the file and execute them in your google colab environment
 
-#Contributors
-Damilola Akinsoju
+# Contributors
+* Damilola Akinsoju
